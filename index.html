@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<!--
+  Nathan Johnson
+  11/29/18
+  CSE-154
+  Section AK
+
+  This is the HTML for the login page that leads to the webshell on my Pentester's notes website.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Reference Guide">
+  <meta name="author" content="Nate Johnson">
+  <title>Nate's Notes - A Pentester's Reference Guide</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="login.js"></script>
+</head>
+<body>
+  <header>
+    <h1>So you're taking the PWK test...</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="techniques.html">Techniques</a></li>
+        <li><a href="404.html">Bash Snippets</a></li>
+        <li><a href="exploits.html">Exploits</a></li>
+        <li><a href="index.html">WebShell</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Please Log In</h1>
+    <h1 class="hidden">Create a User</h1>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" name="username" class="login" placeholder="Enter Username">
+      <label for="password">Password</label>
+      <input type="password" name="password" class="login" placeholder="Enter Password">
+      <button type="button" id="login-btn">Submit</button>
+      <button type="button" id="create-btn">Create a user</button>
+    </form>
+    <form class="hidden">
+      <label for="user">Username</label>
+      <input type="text" name="user" class="create-new" placeholder="Enter Username">
+      <label for="pass">Password</label>
+      <input type="password" name="pass" class="create-new" placeholder="Enter Password">
+      <label for="repeat-password">Repeat Password</label>
+      <input type="password" name="repeat-password" class="create-new" placeholder="Repeat Password">
+      <button type="button" id="submit-new-btn">Submit</button>
+    </form>
+    <div class = "hidden">
+      <p>User Successfully Added!</p>
+      <button type="button" id="to-main-btn">Back to Login Screen</button>
+    </div>
+  </main>
+  <footer>All images and icons were taken/created by me and are my own property
+    (c)2018 Nathan Johnson</footer>
+</body>
+</html>
